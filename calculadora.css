@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(76, 195, 76);
+    height: 600px;
+}
+
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    width: 270px;
+    height: 450px;
+    border-radius: 30px;
+    margin-top: 40px;
+    box-shadow: 10px 10px 0 5px #00000033;
+}
+.display{
+    background-color: black;
+    width:200px ;
+    height:100px ;
+    margin-left:27px;
+    margin-top: 20px;
+    border-radius:30px ;
+    border: 10px solid rgb(98, 27, 27);
+}
+
+.pantalla {
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: black;
+    border: none;
+    width: 185px;
+    margin-left: 5px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.linea{
+    flex-direction: row;
+    align-self: center;
+    margin-top: 10px;
+    width: 192px;
+    
+}
+
+button{
+    height: 45px;
+    width: 45px;
+    border-radius: 500px;
+    background-color: brown;
+    color: white;
+    box-shadow: 1px 2px 15px 0 rgb(98, 27, 27);
+    align-self: center;
+    
+}
+
+button:hover{
+    background-color:rgb(152, 38, 38) ;
+}
+
+.clear{
+  
+    width:93px;
+}
+
+.cero{
+    width: 93px;
+}
