@@ -63,19 +63,19 @@ nueve.addEventListener("click",() =>{
 
 sumar.addEventListener("click",() =>{
     if(s == 0){
-    pantalla.innerHTML += ` + `;
+    pantalla.innerHTML += `+`;
 s++;}
 });
 
 restar.addEventListener("click",() =>{
     if(s == 0){
-    pantalla.innerHTML += ` - `;
+    pantalla.innerHTML += `-`;
 s++}
 });
 
 multiplicar.addEventListener("click",() =>{
     if(s == 0){
-    pantalla.innerHTML +=` x `;
+    pantalla.innerHTML +=`x`;
 s++}
 });
 
@@ -92,8 +92,20 @@ clear.addEventListener("click",()=>{
 });
 
 coma.addEventListener("click",()=>{
-    if(p == 0){
+    if(p == 0){       
     pantalla.innerHTML += `.`}
+})
+
+borrar.addEventListener("click",()=>{
+    if(p == 0){
+        total = pantalla.innerHTML;
+        totalt = total.split("")        
+        totalt.pop();
+        totaltt = totalt.join("");
+        console.log(totaltt)
+        pantalla.innerHTML = totaltt;
+        s = 0;
+    }
 })
 
 igual.addEventListener("click",()=>{
@@ -102,7 +114,7 @@ igual.addEventListener("click",()=>{
     array = [];
    
  if (valor.includes("+")){   
-    array = valor.split(` + `) ;
+    array = valor.split(`+`) ;
     a = parseFloat(array[0]);
     b = parseFloat(array[1]);
     if(isNaN(a)){
@@ -110,33 +122,33 @@ igual.addEventListener("click",()=>{
     }
 
     resultado = a + b;
-    pantalla.innerHTML=resultado.toFixed(2);
+    pantalla.innerHTML=resultado.toFixed(1);
     p++;
     
 }
 
 
 
-if (valor.includes(` - `)){
-    array = valor.split(` - `) ;
+if (valor.includes(`-`)){
+    array = valor.split(`-`) ;
     a = parseFloat(array[0]) ;
     b = parseFloat(array[1]);
     if(isNaN(a)){
         a = 0;
     }
     resultado = a - b;
-    pantalla.innerHTML=resultado.toFixed(2);
+    pantalla.innerHTML=resultado.toFixed(1);
     p++;
 }
 if (valor.includes("x")){
-    array = valor.split(` x `) ;
+    array = valor.split(`x`) ;
     a = parseFloat(array[0]) ;
     b = parseFloat(array[1]);
     if(isNaN(a)){
         a = 0;
     }
     resultado = a * b;
-    pantalla.innerHTML=resultado.toFixed(2);
+    pantalla.innerHTML=resultado.toFixed(1);
     p++;
 }
 if (valor.includes(` / `)){
@@ -147,7 +159,7 @@ if (valor.includes(` / `)){
         a = 0;
     }
     resultado = a / b;
-    pantalla.innerHTML=resultado.toFixed(2);
+    pantalla.innerHTML=resultado.toFixed(1);
     p++;
  
 }}) 
