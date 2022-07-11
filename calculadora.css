@@ -1,7 +1,7 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: rgb(76, 195, 76);
+    background-color: #239B56;
     height: 600px;
 }
 
@@ -9,11 +9,11 @@ body{
 .calculadora{
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    background-color: #c1382c ;
     width: 270px;
     height: 450px;
     border-radius: 30px;
-    margin-top: 40px;
+    margin-top: 130px;
     box-shadow: 10px 10px 0 5px #00000033;
 }
 .display{
@@ -23,7 +23,7 @@ body{
     margin-left:27px;
     margin-top: 20px;
     border-radius:30px ;
-    border: 10px solid rgb(98, 27, 27);
+    border: 10px solid #73211a ;
 }
 
 .pantalla {
@@ -50,6 +50,7 @@ body{
     align-self: center;
     margin-top: 10px;
     width: 193px;
+    justify-content: center;
     
 }
 
@@ -57,7 +58,7 @@ button{
     height: 45px;
     width: 45px;
     border-radius: 500px;
-    background-color: brown;
+    background-color:#c1382c ;
     color: white;
     box-shadow: 1px 2px 15px 0 rgb(98, 27, 27);
     align-self: center;
